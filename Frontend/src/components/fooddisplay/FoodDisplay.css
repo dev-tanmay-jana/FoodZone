@@ -1,0 +1,144 @@
+.food_display {
+  margin-top: 20px;
+  padding: 7px 10px;
+}
+
+.food_display h2 {
+  font-size: max(2vw, 24px);
+  font-weight: 600;
+}
+
+.food_display_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  margin-top: 20px;
+  gap: 30px;
+  row-gap: 20px;
+}
+
+.food_item {
+  width: 100%;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0px 0px 8px #1f1f1f;
+  transition: transform 0.3s ease;
+}
+
+.food_item:hover {
+  transform: scale(1.02);
+}
+
+.food_image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.food_info {
+  padding: 20px;
+}
+
+.food_name_price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+.food_ratings {
+  padding-bottom: 10px;
+}
+
+.food_desc {
+  font-family: 'Lucida Sans', sans-serif;
+  font-size: 0.8rem;
+}
+
+.food_price {
+  color: tomato;
+}
+
+.add_btn {
+  background-color: rgb(8, 164, 8);
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.add_btn:hover {
+  background-color: rgb(24, 249, 58);
+}
+
+.ratings_Add {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  flex-wrap: wrap;
+}
+
+.food_item_counter {
+    height: 40px;
+    width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  background-color: rgb(13, 254, 49);
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+
+/* 🔁 Responsive Tweaks */
+@media screen and (max-width: 768px) {
+  .food_display_list {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+  }
+
+  .food_image {
+    height: 120px;
+  }
+
+  .food_name_price {
+    font-size: 1.1rem;
+  }
+
+  .add_btn {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+  .food_item_counter{
+    height: 30px;
+    width: auto;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .food_display_list {
+    grid-template-columns: 1fr;
+  }
+
+  .food_image {
+    height: 100px;
+  }
+
+  .food_info {
+    padding: 15px;
+  }
+
+  .food_name_price {
+    font-size: 1rem;
+  }
+}

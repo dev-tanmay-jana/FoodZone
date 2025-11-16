@@ -1,0 +1,95 @@
+.header {
+  height: 35vw;
+  margin: 3px auto;
+  background-image: url("header_img.png");
+  background-size: cover;         /* Ensures the image covers the entire area */
+  background-position: center;    /* Centers the image */
+  background-repeat: no-repeat; 
+  position: relative;
+}
+.header_content{
+    max-width: 40rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 10%;
+    left: 6vw;
+}
+.header_content h2{
+    font-weight: 300px;
+    /* padding-top: 5px; */
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: max(4.5vw,22px);
+}
+.header_content p{
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+.header_content button{
+    width: auto;
+    height: auto;
+    border: none;
+    padding: 5px 8px;
+    margin: 2px;
+    border-radius: 20px;
+    color: #fa8602;
+    background-color: #faf9f9;
+    font-size: max(1.2rem,13px);
+    &:hover{
+        background-color: #fa8602;
+        color: #fafaf9;
+    }
+}
+@media (max-width){
+    .header{
+        height: 100vw;
+    }
+    .header_content{
+        max-width: 45%;
+    }
+    .more_detail{
+    display: none;
+  }
+
+}
+@media screen and (max-width: 900px) {
+  .header {
+    height: 50vw; /* Slightly taller for smaller screens */
+  }
+
+  .header_content {
+    bottom: 5%;
+    left: 4vw;
+    align-items: flex-start; /* Align text to the left for better readability */
+  }
+
+  .header_content h2 {
+    font-size: max(6vw, 18px); /* Increase font size slightly for visibility */
+    text-align: left;
+  }
+  .more_detail{
+    display: none;
+  }
+  .header_content p{
+    color: aliceblue;
+    font-size: 1rem;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    height: 30vw;
+  }
+
+  .header_content {
+    left: 3vw;
+    bottom: 3%;
+  }
+
+  .header_content h2 {
+    font-size: max(7vw, 16px);
+  }
+}

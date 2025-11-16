@@ -1,0 +1,21 @@
+.app_download{
+    margin: auto auto;
+    margin-top: 50px;
+    font-size: max(3vw,20px);
+    text-align: center;
+    font-weight: 500;
+}
+.app_down_platfrom{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.app_down_platfrom img{
+    width: max(30vw,120px);
+    max-width: 180px;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
