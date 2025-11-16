@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/navbar/navbar'
+// If the file is named Navbar.jsx
+import Navbar from './components/navbar/Navbar';
 import { Route,Routes } from 'react-router-dom';
 import Home from "./pages/home/Home";
 import Cart from "./pages/cart/Cart";
