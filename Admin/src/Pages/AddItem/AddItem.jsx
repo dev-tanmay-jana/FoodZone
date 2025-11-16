@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { useEffect } from 'react';
 import axios from "axios"
 const AddItem = () => {
-    const url = "http://localhost:8000";
+    const url = "https://foodzone-backend-oi5d.onrender.com";
     const [image,setimage] = useState(false);
     const [data,setdata] = useState({
         name:"",
