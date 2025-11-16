@@ -24,7 +24,7 @@ app.use("/food",fodRouter);
 app.use("/images",express.static("Uploads"));
 app.use("/user",userRouter);
 app.use("/cart",cartRouter);
-app.use("/myorder",orderRouter);
+app.use("/order",orderRouter);
 
 app.get("/",(req,res)=>{
     res.send("Api Working");
