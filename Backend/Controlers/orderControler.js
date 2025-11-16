@@ -63,7 +63,7 @@ const verifyOreder = async(req,res)=>{
                 { payment: true },
                 { new: true }
             );
-            console.log("update true");
+            // console.log("update true");
             res.json({message:"paid"})
         }
         else{
