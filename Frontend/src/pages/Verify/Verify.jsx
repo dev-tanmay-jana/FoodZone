@@ -14,7 +14,7 @@ const Verify = () => {
     const navigate = useNavigate();
 
     const verifyPayment = async()=>{
-        const response =await axios.post(`${url}/order/verify`, {
+        const response =await axios.post(`${url}/myorder/verify`, {
             success,
             orderId: orderid // ✅ corrected key name
             });;

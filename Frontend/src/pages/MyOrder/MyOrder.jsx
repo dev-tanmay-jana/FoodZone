@@ -8,7 +8,7 @@ const MyOrder = () => {
 
   const fetchOrders = async () => {
     try {
-      const response = await axios.post(`${url}/order/userorder`, {}, {
+      const response = await axios.post(`${url}/myorder/userorder`, {}, {
         headers: { token }
       });
       setData(response.data.data);
