@@ -6,7 +6,7 @@ export const StoreContext = createContext(null);
 
 
 const SrtoreContextprovider = (props) =>{
-    const url = "http://localhost:8000";
+    const url = "https://foodzone-backend-oi5d.onrender.com";
     const [token,settoken] = useState("")
     const [FoodList,setFoodList] = useState([]);
 
