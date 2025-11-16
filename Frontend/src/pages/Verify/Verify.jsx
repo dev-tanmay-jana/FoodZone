@@ -22,7 +22,7 @@ const Verify = () => {
             navigate("/myorder");
         }
         else{
-            navigate("/")
+            navigate("https://foodzone-fronend.onrender.com/myorder")
         }
     }
     useEffect(()=>{
