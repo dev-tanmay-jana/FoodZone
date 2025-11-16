@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import { MdDeleteForever } from "react-icons/md";
 
 const List = () => {
-    const url = "http://localhost:8000"
+    const url = "https://foodzone-backend-oi5d.onrender.com"
     const [list,setlist] = useState([]);
 
     const fetchlist = async () => {
