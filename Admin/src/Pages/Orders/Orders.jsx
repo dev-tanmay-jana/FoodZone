@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import "./Orders.css"
 
 const Orders = () => {
-  const url = "http://localhost:8000";
+  const url = "srv-d4cp6qn5r7bs73aidb7g";
   const [orders, setOrders] = useState([]);
 
   const fetchOrderList = async () => {
