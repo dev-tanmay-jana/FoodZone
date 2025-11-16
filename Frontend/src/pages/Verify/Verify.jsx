@@ -22,7 +22,7 @@ const Verify = () => {
             navigate("/myorder");
         }
         else{
-            navigate("/")
+            navigate("/myorder")
         }
     }
     useEffect(()=>{

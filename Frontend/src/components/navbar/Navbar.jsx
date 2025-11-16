@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import './navbar.css'
+import './Navbar.css'
 import { useState } from 'react';
 import { NavLink,Link, useNavigate } from 'react-router-dom';
 import { IoSearch } from "react-icons/io5";

@@ -6,7 +6,7 @@ const Stripe = require("stripe");
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 console.log("Stripe key loaded:", process.env.STRIPE_SECRET_KEY ? "✅" : "❌");
 const placeorder = async (req, res) => {
-  const frontend_url = "http://localhost:5174";
+  const frontend_url = "https://foodzone-admin-7s4q.onrender.com/orders";
 
   try {
     const newOrder = new orderModel({
